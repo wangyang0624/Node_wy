@@ -50,7 +50,3 @@ program
      program.parse(process.argv)
 
 
-// if(program.add){console.log("a,456")}
-
-// fs.writeFileSync('./src/data/user.json', JSON.stringify(user))
-
