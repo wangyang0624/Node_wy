@@ -1,0 +1,306 @@
+/* *{margin: 0;padding: 0;text-decoration: none;list-style: none;box-sizing: border-box;}
+#root{position: absolute;top: 0;left: 0;right: 0;bottom: 0;} */
+
+/* .login{position: absolute;top: 50%;left: 50%;margin-top: -250px;margin-left: -250px;width: 500px;height: 500px;}
+.login p{margin: 35px;}
+.login button{width: 60px;height: 30px;background: lightblue;border: 0;}
+.login>.l-button{width:155px;height: 30px;background: lightblue;border: 0;margin: 0 70px;}
+.TS{color: red;}
+
+
+.Home{position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: flex;}
+.tuichu{position: fixed;left: 80%;}
+.tuichu span{font-size: 20px;color: lightsalmon;}
+.H-left{width: 30%;border: 1px solid #000;margin: 30px;display: flex;flex-direction: column;}
+.H-left a{width: 100%;height: 50px;text-align: center;line-height: 50px;font-size: 20px;}
+.H-left a.active{background: rosybrown;}
+
+.H-right{margin: 30px;width: 50%;}
+
+.GESZ p{margin: 40px;font-size: 30px;}
+
+
+
+.P{font-size: 30px;} */
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html,body,#root{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login,.register{
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+  }
+  
+  .login-box{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin:-200px 0 0 -200px;
+    width: 400px;
+    height: 370px;
+    border: 1px solid #d1cdcd;
+    background: white;
+  }
+  
+  .register-box{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin:-250px 0 0 -200px;
+    width: 400px;
+    height: 380px;
+    border: 1px solid #d1cdcd;
+    background: white;
+  }
+  
+  .login-box h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(207, 38, 38);
+    color: white;
+  }
+  
+  .register-box h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    background: rgb(207, 38, 38);
+    color: white;
+  }
+  
+  .register-box h3 span{
+    margin-right: 145px;
+  }
+  
+  .login-input,.register-input{
+    margin:30px auto;
+    width: 300px;
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid #b1aeae;
+    display: flex;
+  }
+  
+  .login-input input,.register-input input{
+    width: 100%;
+    height: 100%;
+    padding-left:10px;
+    outline: none;
+    border: none;
+  }
+  
+  .login-button{
+    display: flex;
+    justify-content: space-between;
+    margin:30px auto;
+    width: 300px;
+    height: 40px;
+    overflow: hidden;
+  }
+  
+  .login-btn{
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(207, 38, 38);
+    color: white;
+    margin: 0 130px;
+  }
+  
+  .register-btn{
+    margin:30px auto;
+    text-align: center;
+    line-height: 40px;
+    width: 300px;
+    height: 40px;
+    background: rgb(207, 38, 38);
+    color: white;
+  }
+  .B-h4{
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(207, 38, 38);
+    color: white;
+  }
+
+
+  .home{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .home-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: rgb(207, 38, 38);
+    padding:0 70px;
+    font-family: "楷体";
+    color: white;
+    font-size: 20px;
+  }
+  
+  .home-main{
+    display: flex;
+    width: 100%;
+    height: 640px;
+  }
+  
+  .home-main-left{
+    width: 18%;
+    height: 100%;
+  }
+  
+  .home-main-right{
+    width: 82%;
+    height: 100%;
+    background: #eeeeee;
+    overflow: hidden;
+  }
+  
+  .navlist{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    color: black;
+    line-height: 70px;
+    text-align: center;
+    font-family: "楷体";
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .home-main-left .active{
+    background: #eeeeee;
+    color: black;
+  }
+  
+  .personset,.personset-bottom{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .personset-box{
+    width: 400px;
+    height: 230px;
+    border: 1px solid #cfcdcd;
+    margin: 50px 0 0 50px;
+    background: white
+  }
+  
+  .personset-box h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-bottom: 1px solid #cfcdcd;
+  }
+  
+  .personset-item{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .personset-item p{
+    width: 50%;
+    padding-left:10px;
+  }
+  
+  .personset-left{
+    text-align: right;
+    padding-right:10px; 
+  }
+  
+  .students,.score{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .students-table,.score-table{
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  .students-table h2{
+    margin-bottom:20px; 
+  }
+  
+  .students-btn Button,.score-btn Button{
+    margin-right: 20px;
+  }
+  
+  .search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .search{
+    display: flex;
+  }
+  
+  .search-input{
+    width: 200px;
+    height: 32px;
+    overflow: hidden;
+    border: 1px solid #b1aeae;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .search-input input{
+    width: 100%;
+    height: 100%;
+    padding-left:10px;
+    outline: none;
+    border: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.CJ{
+  margin: 20px;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+}
+  .Tac{    margin: 20px;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    overflow: auto;
+    height: 100%;}
